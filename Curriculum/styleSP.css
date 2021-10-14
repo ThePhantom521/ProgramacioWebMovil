@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(-90deg, silver, gray, rgb(47, 54, 121));
+}
+.boxprincipal {
+}
+.tablalista {
+  display: flex;
+  justify-content: space-around;
+}
+.tabla {
+  border: 5px solid black;
+  background: whitesmoke;
+  text-align: center;
+}
+td {
+  border: 2.5px solid black;
+  font-size: 20px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.divarriba {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
