@@ -1,0 +1,197 @@
+@import "./base";
+@import "./component";
+@import "./layout";
+@import "./active-state";
+
+body {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin: 1em 0;
+}
+
+.header-container {
+  background-image: url("../images/bg-pattern-intro.svg"),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position-x: -35rem, 0;
+  background-position-y: -85rem, 0;
+  background-repeat: no-repeat;
+  padding: 3em 5em;
+  padding-bottom: 8em;
+  border-bottom-left-radius: 5em;
+  color: $header-text-color;
+  font-family: $font-stack1;
+
+  .menu {
+    background-color: $header-text-color;
+    width: 6em;
+    padding: 0.2em 1em;
+    border-radius: 0.5em;
+
+    ul {
+      color: $body-text-color;
+    }
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 4em;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  li {
+    font-size: 13px;
+  }
+}
+
+.body1 {
+  font-family: $font-stack1;
+
+  h1 {
+    margin-top: 3.5em;
+    color: $heading-color;
+    font-weight: 600;
+    font-size: 2.5em;
+  }
+
+  h2 {
+    color: $heading-color;
+    font-weight: 600;
+  }
+
+  p {
+    font-weight: 300;
+    color: $body-text-color;
+    font-size: 15px;
+    line-height: 1.8em;
+  }
+}
+
+.body2 {
+  background-image: url("../images/bg-pattern-circles.svg"),
+    linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-repeat: no-repeat;
+  background-position-x: -14em, 0;
+  background-position-y: -36em, 0;
+  color: $header-text-color;
+  font-family: $font-stack1;
+  border-top-right-radius: 5em;
+  border-bottom-left-radius: 5em;
+
+  h2 {
+    font-weight: 600;
+    font-size: 2em;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.8em;
+  }
+}
+
+.body3 {
+  font-family: $font-stack1;
+
+  h2 {
+    color: $heading-color;
+    font-weight: 600;
+    font-size: 2em;
+  }
+
+  p {
+    font-weight: 300;
+    color: $body-text-color;
+    font-size: 15px;
+    line-height: 1.8em;
+  }
+}
+
+footer {
+  font-family: $font-stack1;
+  background-color: $footer-background;
+  color: $footer-text-color;
+  padding: 3em 0;
+  border-top-right-radius: 5em;
+
+  h3 {
+    color: $header-text-color;
+    font-weight: 600px;
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    background-image: url("../images/bg-pattern-intro.svg"),
+      linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position-x: -20rem, 0;
+    background-position-y: -18rem, 0;
+    background-size: 315%;
+    padding: 3em 2.5em 7em;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .navbar {
+      background-color: $header-text-color;
+      box-shadow: 0 10px 10px 1px hsl(240, 2%, 79%, 0.2);
+      .menu-toggler {
+        button {
+          color: $heading-color;
+          font-weight: 600;
+          font-size: 1.1em;
+        }
+      }
+
+      .menu {
+        background-color: hsl(240, 2%, 79%, 0.2);
+      }
+
+      .login {
+        border-top: solid $footer-text-color;
+        border-top-width: 1px;
+      }
+    }
+
+    li {
+      font-size: 1em;
+      color: $heading-color;
+      font-weight: 600;
+    }
+  }
+
+  .body2 {
+    background-position-x: -6em, 0;
+    background-position-y: -10em, 0;
+    background-size: 150%, cover;
+
+    h2 {
+      font-size: 3.5em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .body2 {
+    h2 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}

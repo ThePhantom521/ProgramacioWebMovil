@@ -1,0 +1,154 @@
+@import "./base";
+
+// Button style
+.header-container {
+  .menu-toggler {
+    button {
+      @extend %button;
+    }
+  }
+
+  .login {
+    button {
+      @extend %button;
+      margin: 0 1em;
+
+      &:nth-of-type(1) {
+        color: $header-text-color;
+      }
+
+      &:nth-of-type(2) {
+        color: $primary-color;
+        background-color: $header-text-color;
+        border-radius: 2em;
+        padding: 0.8em 1.5em;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .start {
+    button {
+      @extend %button;
+      margin: 2em 1em;
+
+      &:first-of-type {
+        color: $primary-color;
+        background-color: $header-text-color;
+        border-radius: 2em;
+        padding: 0.8em 1.5em;
+        font-weight: 600;
+      }
+
+      &:last-of-type {
+        border: solid;
+        border-color: $header-text-color;
+        border-radius: 2em;
+        padding: 0.8em 1.5em;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Images style
+.header {
+  img {
+    align-self: flex-start;
+  }
+
+  .menu-toggler {
+    img {
+      margin-left: 0.5em;
+    }
+  }
+}
+
+.body1-img {
+  img {
+    position: relative;
+    right: 2em;
+  }
+}
+
+.body2-img {
+  width: 100%;
+  img {
+    position: relative;
+    top: -11em;
+    left: 5em;
+  }
+}
+
+.body3-img {
+  img {
+    position: relative;
+    left: -17.5em;
+  }
+}
+
+footer {
+  img {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    .login {
+      button {
+        font-size: 1.1em;
+        &:first-of-type {
+          color: $heading-color;
+          font-weight: 600;
+        }
+        &:last-of-type {
+          background-image: linear-gradient(
+            to right,
+            hsl(13, 100%, 72%),
+            hsl(353, 100%, 62%)
+          );
+          color: $header-text-color;
+        }
+      }
+    }
+    .menu-toggler {
+      img {
+        content: url("../images/icon-arrow-dark.svg");
+        align-self: center;
+      }
+    }
+  }
+
+  .body1-img {
+    img {
+      content: url("../images/illustration-editor-mobile.svg");
+      right: 0;
+      width: 100%;
+    }
+  }
+
+  .body2-img {
+    img {
+      right: 1em;
+      left: 0;
+      width: 100%;
+      top: -18em;
+    }
+  }
+  .body3-img {
+    img {
+      content: url("../images/illustration-laptop-mobile.svg");
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .body2-img {
+    img {
+      top: -10em;
+    }
+  }
+}

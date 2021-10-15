@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:ital,wght@0,700;1,400;1,500&display=swap");
+
+$primary-color: hsl(356, 100%, 66%);
+$hover-color: hsl(355, 100%, 74%);
+$heading-color: hsl(208, 49%, 24%);
+$header-text-color: hsl(0, 0%, 100%);
+$footer-text-color: hsl(240, 2%, 79%);
+$body-text-color: hsl(207, 13%, 34%);
+$footer-background: hsl(240, 10%, 16%);
+$font-stack1: "Overpass", sans-serif;
+$font-stack2: "Ubuntu", sans-serif;
+
+%button {
+  background-color: transparent;
+  border: none;
+  color: $header-text-color;
+  padding: 0;
+}
