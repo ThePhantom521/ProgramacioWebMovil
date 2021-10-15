@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThePhantom521</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <title>Portafolio Mateo Vasquez Correa</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Portafolio de Mateo Vasquez Correa</h1>
+    <div id="container">
+      <header>
+        <h1><strong> Portafolio de Mateo Vasquez Correa </strong></h1>
+      </header>
+      <section id="content">
+        <article class="titulo1">
+          <h2>Bienvenidos</h2>
+        </article>
+        <article class="contenido1">
+          <p>
+            <strong>Esta Web contendra:</strong>
+          </p>
+        </article>
 
-    <p>Bienvenidos a mi pagina web de uso personal </p>
+        <article class="titulo2">
+          <h3>Contenido:</h3>
+        </article>
+        <article class="proyectos">
+          <ul>
+            <li>><a href="https://www.figma.com/file/oaOEkZHdHzJluSciXfp8YS/Hoja-de-Vida?node-id=0%3A1">Hoja de Vida en Figma</li>
+            <li><a href="curriculum.html">Hoja de Vida en HTML</li>
+            <li><a href="Solucion Reto/index.html">Solucion Reto</a></li>
+            <li><a href="Sopa de Letras.html">Sopa De Letras</a></li>
+            
+          </ul>
+        </article>
+      </section>
+    </div>
+    <footer>
+      <div id="copyright">
+        <p>
+          &copy; 2021
 
-   <h2>Portafolio </h2>
-
-    <p>Esta web contendra el siguiente contenido:</p>
-
-    <ul>
-      <li>Proyectos</li>
-      <li>Trabajos de Clase</li>
-      <li><a href="https://www.figma.com/file/oaOEkZHdHzJluSciXfp8YS/Hoja-de-Vida?node-id=0%3A1">Hoja de Vida</li>
-    </ul>
-
-
-    
+          <strong>ThePhantom521</strong>
+        </p>
+      </div>
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+          var main = document.getElementById("main");
+          var coimg = document.getElementById("coimg");
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+            main.style.display = "flex";
+            coimg.style.width = "350px";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+            main.style.display = "block";
+            coimg.style.width = "100%";
+            coimg.style.transition = "all 1s";
+          }
+        }
+      </script>
+      <script src="js/main.js" type="text/javascript"></script>
+    </footer>
   </body>
 </html>
